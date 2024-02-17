@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+          .container {
+            border: 2px solid black;
+            /* transition-property: transform(340deg) 3s; */
+            display: flex;
+            justify-content: space-between;
+          }
+          .items {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+          }
+          .items:hover {
+            width: 200px;
+            height: 200px;
+            border-radius: 40px;
+            background-color: red;
+
+            transform: rotate(340deg);
+            transition: 3s;
+          }
+
+          .width-animation {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+          }
+          .width-animation:hover {
+            width: 300px;
+            /* height: 200px; */
+            border-radius: 40px;
+            background-color: green;
+            animation-name: Example;
+
+            /* transform: rotate(340deg); */
+            transition: 3s;
+          }
+          .colors {
+            width: 100px;
+            height: 100px;
+            animation-iteration-count: infinite;
+
+            /* animation-name: Example; */
+
+            background-color: blue;
+          }
+          .colors:hover {
+            width: 200px;
+            height: 200px;
+            border-radius: 40px;
+            animation-iteration-count: 3;
+            animation-fill-mode:both;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            background-color: burlywood;
+            transform: rotate(180deg);
+            transition: 2s;
+            
+          }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-1">
+        <div class="item-1 items"></div>
+        <div class="item-2 items"></div>
+        <div class="item-3 items"></div>
+        <div class="item-4 items"></div>
+        <div class="item-5 items"></div>
+        <div class="item-6 items"></div>
+        <div class="item-7 items"></div>
+        <div class="item-8 items"></div>
+        <!-- <div class="item-9 items"></div> -->
+      </div>
+      <div class="container-2">
+        <div class="width-animation"></div>
+        <div class="width-animation"></div>
+        <div class="width-animation"></div>
+        <div class="width-animation"></div>
+        <div class="width-animation"></div>
+        <div class="width-animation"></div>
+        <div class="width-animation"></div>
+        <div class="width-animation"></div>
+        <!-- <div class="width-container"></div> -->
+        <!-- <div class="width-container"></div> -->
+      </div>
+      <div class="container-3">
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <!-- <div class="colors"></div> -->
+        <!-- <div class="colors"></div> -->
+      </div>
+    </div>
+  </body>
+</html>
